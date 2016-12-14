@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'solidus_core', ' >= 1.1', '< 2.0'
+  s.add_dependency 'solidus_core', '>= 1.1', '< 3'
 
   s.add_development_dependency 'solidus_auth_devise'
   s.add_development_dependency 'capybara', '~> 2.2'
