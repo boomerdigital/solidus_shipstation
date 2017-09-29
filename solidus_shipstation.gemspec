@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'solidus_auth_devise'
   s.add_development_dependency 'capybara', '~> 2.2'
-  s.add_development_dependency 'coffee-rails', '~> 4.1.1'
+  s.add_development_dependency 'coffee-rails', '>= 4.1'
   s.add_development_dependency 'factory_girl'
   s.add_development_dependency 'factory_girl_rails'
   s.add_development_dependency 'database_cleaner'

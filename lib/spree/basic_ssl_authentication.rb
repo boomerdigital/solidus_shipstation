@@ -6,7 +6,7 @@ module Spree
 
     included do
       force_ssl if: :ssl_configured?
-      before_filter :authenticate
+      before_action :authenticate
     end
 
     protected
