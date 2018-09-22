@@ -29,7 +29,7 @@ xml.Orders(pages: (@shipments.total_count/50.0).ceil) {
         Spree::ExportHelper.address(xml, order, :ship)
       }
       xml.Items {
-        shipment.line_items.each do |line|
+        shipment.manifest.each do |line|
           variant = line.variant
           xml.Item {
             xml.SKU         variant.sku
