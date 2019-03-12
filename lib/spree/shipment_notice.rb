@@ -62,7 +62,7 @@ module Spree
       unless shipment.shipped?
         shipment.reload.ship!
         shipment.touch :shipped_at
-        shipment.order.update!
+        shipment.order.recalculate
       end
 
       true
